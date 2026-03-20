@@ -134,13 +134,13 @@
         <div class="photo-frame top-right">
             <div class="pita"></div>
             <div class="img-box" style="background-image: url('kiaacantik.jpg');"></div>
-            <div class="date-label">20 Maret 2026</div>
+            <div class="date-label">20-Maret-2026</div>
         </div>
 
         <div class="photo-frame bottom-left">
-            <div class="red-love">❤️</div>
+            <div class="red-love"></div>
             <div class="img-box" style="background-image: url('kiaaimut.jpg');"></div>
-            <div class="date-label">20 Maret 2026</div>
+            <div class="date-label">20-Maret-2026</div>
         </div>
 
         <div id="lyric-container">
@@ -185,7 +185,11 @@
             function showNext() {
                 if (currentLine < lyrics.length) {
                     textEl.innerHTML = ""; 
+                    
+                    
                     typeWriter(lyrics[currentLine].t, 0, function() {
+                        
+                        
                         
                         setTimeout(() => {
                             currentLine++;
